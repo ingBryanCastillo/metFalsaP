@@ -1,20 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package Vista;
 
 import falsa.MetoPosicionFalsaGUI;
 
 /**
  *
- * @author Alex
+ * @author Bryan
  */
 public class frmPrincipal extends javax.swing.JFrame {
-
-    /**
-     * Creates new form frmPrincipal
-     */
     public frmPrincipal() {
         initComponents();
     }
@@ -45,6 +38,7 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel1.setText("Metodo Falsa Posicion");
 
         jLabel2.setText("Ingrese Funcion:");
@@ -75,33 +69,31 @@ public class frmPrincipal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(135, 135, 135)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
+                        .addGap(31, 31, 31)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 781, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(118, 118, 118)
-                                .addComponent(jLabel6)
-                                .addGap(18, 18, 18)
-                                .addComponent(txtRaiz, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(31, 31, 31)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel3)
                                     .addComponent(jLabel5)
                                     .addComponent(jLabel4)
                                     .addComponent(jLabel2))
                                 .addGap(72, 72, 72)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnCalcular)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(txtFuncion)
-                                        .addComponent(txtX1)
-                                        .addComponent(txtXu)
-                                        .addComponent(txtTol, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)))))
-                        .addGap(56, 56, 56)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 426, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(47, Short.MAX_VALUE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(txtFuncion)
+                                    .addComponent(txtX1)
+                                    .addComponent(txtXu)
+                                    .addComponent(txtTol, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE))
+                                .addGap(84, 84, 84)
+                                .addComponent(btnCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel6)
+                                .addGap(18, 18, 18)
+                                .addComponent(txtRaiz, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(319, 319, 319)
+                        .addComponent(jLabel1)))
+                .addContainerGap(65, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -109,12 +101,12 @@ public class frmPrincipal extends javax.swing.JFrame {
                 .addGap(15, 15, 15)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtFuncion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtFuncion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2))
-                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(txtX1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel3))
@@ -122,20 +114,19 @@ public class frmPrincipal extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(txtXu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel4))
-                        .addGap(18, 18, 18)
+                        .addGap(18, 18, 18))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtTol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
-                        .addComponent(btnCalcular)
-                        .addGap(31, 31, 31)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel6)
                             .addComponent(txtRaiz, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(78, 78, 78))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGap(21, 21, 21)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtTol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         pack();
@@ -147,13 +138,10 @@ public class frmPrincipal extends javax.swing.JFrame {
     double tol = Double.parseDouble(this.txtTol.getText());
     String raiz;
     txtInfo.append("Iteración\t\t|\tA\t|\tB\t|\tC\t|\tF(c)\t|\tError\n");
-    //String funcion = this.txtFuncion.getText();
-    //Funcion f = new Funcion(funcion);
-    
+ 
     double x1, x2, f1, f2, xm, fm, error;
     int iter = 0;
-    //txtInfo.append("Iteración\t|\tA\t\t|\tB\t\t|\tC\tF(c)\tError\t\n");
-    
+
     do {
       f1 = f(a);
       f2 = f(b);
@@ -174,44 +162,12 @@ public class frmPrincipal extends javax.swing.JFrame {
     } while (error > tol);
     raiz = Double.toString(xm);
     this.txtRaiz.setText(raiz);
-    //System.out.println("Iteraciones: " + iter);
     }//GEN-LAST:event_btnCalcularActionPerformed
     
     private double f(double x) {
-    // Inserta aquí tu función personalizada
     return 2*x*x*x+x-1;
   }
-    
-    /*class Funcion {
-    private String funcion;
 
-    public Funcion(String funcion) {
-        this.funcion = funcion;
-    }
-
-    public double eval(double x) {
-    String expr = funcion.replaceAll("x", String.valueOf(x));
-    Object result = new Object() {
-        public Object eval() {
-            try {
-                return new javax.script.ScriptEngineManager().getEngineByName("JavaScript").eval(expr + "");
-            } catch (Exception e) {
-                return Double.NaN;
-            }
-        }
-    }.eval();
-
-    if (result instanceof Number) {
-        return ((Number) result).doubleValue();
-    } else {
-        return Double.NaN;
-    }
-    }
-  }*/
-    
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
